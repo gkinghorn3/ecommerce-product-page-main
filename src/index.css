@@ -2,15 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-#nav-link-container {
-    @apply text-grayishBlue;
+
+#logoImg {
+    width: clamp(6.875rem, 5.9722rem + 3.7037vw, 8.75rem);
 }
 
 .mobile-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @apply bg-primaryOrange;
+    @apply bg-grayishBlue;
     height: 100vh;
     @apply w-full;
     text-align: left;

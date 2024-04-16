@@ -13,23 +13,19 @@ export default function Nav() {
 
   const { isOpen, setIsOpen } = useContext(MobileMenuContext);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  }
 
-  
   return (
     <>
       <MobileMenu />
       <nav className="py-6 px-12 flex justify-between">
         <div id="nav-left" className="flex gap-4 md:gap-10">
           <div className="flex items-center">
-            <button onClick={toggleMenu}>
+            <button onClick={() => setIsOpen(!isOpen)}>
               <img src={burger} alt="" className="md:hidden"  />
             </button>
           </div>
           <div id="logo-container" className="flex items-center">
-            <img className="" src={logo} alt="logo image" />
+            <img id="logoImg" className="" src={logo} alt="logo image" />
           </div>
           <NavLinks />
         </div>
