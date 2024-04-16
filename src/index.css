@@ -4,5 +4,25 @@
 
 #nav-link-container {
     @apply text-grayishBlue;
-    display: inline-block;
 }
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @apply bg-primaryOrange;
+    height: 100vh;
+    @apply w-full;
+    text-align: left;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+
+.mobile-menu.open {
+    transform: translateX(0);
+}
+

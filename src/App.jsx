@@ -1,17 +1,14 @@
+import "./App.css";
 
-import './App.css'
-
-import Nav from './components/Nav';
-
+import Nav from "./components/Nav";
+import MobileMenuProvider from "./store/mobileMenuContext";
 
 function App() {
-
-
   return (
-    <div className='mx-auto'>
+    <MobileMenuProvider>
       <Nav />
-    </div>
-  )
+    </MobileMenuProvider>
+  );
 }
 
-export default App
+export default App;
