@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -8,10 +8,13 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
-
-
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+
+import productImage1 from '../assets/product-images/image-product-1.jpg';
+import productImage2 from '../assets/product-images/image-product-2.jpg';
+import productImage3 from '../assets/product-images/image-product-3.jpg';
+import productImage4 from '../assets/product-images/image-product-4.jpg';
 
 export default function ImageSlider() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -31,7 +34,7 @@ export default function ImageSlider() {
         className="mySwiper2"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img src={productImage1} />
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
