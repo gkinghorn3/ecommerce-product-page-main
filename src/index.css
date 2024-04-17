@@ -3,10 +3,20 @@
 @tailwind utilities;
 
 
+/* custom classes  */
+.section {
+    @apply px-0 md:px-32 max-w-[1200px] mx-auto;
+}
+
+
+/* end custom classes  */
+
+
 #logoImg {
     width: clamp(6.875rem, 5.9722rem + 3.7037vw, 8.75rem);
 }
 
+/* mobile menu styling  */
 .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -26,6 +36,8 @@
 .mobile-menu.open {
     transform: translateX(0);
 }
+
+/* end mobile menu styling  */
 
 /* change arrow button  */
 .swiper-button-next { 
@@ -50,15 +62,18 @@
     display: none!important;
   }
 
+  @media (max-width: 767px) {
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+  }
+
  /* end change arrow button  */
 
-
-
-
-.section {
-    @apply px-0 md:px-32 max-w-[1200px] mx-auto;
-}
-
+/* image slider & lightbox  */
 #thumbnails {
     max-width: 448px;
     min-width: 0;
@@ -69,3 +84,25 @@
         display: none;
     }
 }
+
+.lightboxSwiper {
+    max-width: 400px; 
+}
+
+.lightbox {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.lightbox-backdrop {
+    z-index: 999;
+    opacity: 0.9;
+}
+
+#lightbox-thumbnails {
+    max-width: 400px;
+}
+
+/* end image slider and lightbox  */
