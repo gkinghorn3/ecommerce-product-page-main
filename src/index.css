@@ -27,3 +27,45 @@
     transform: translateX(0);
 }
 
+/* change arrow button  */
+.swiper-button-next { 
+    background-image: url(./assets/navNext.svg)!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    
+}
+
+.swiper-button-next::after {
+    display: none!important;
+  }
+
+  .swiper-button-prev { 
+    background-image: url(./assets/navPrev.svg)!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    
+}
+
+.swiper-button-prev::after {
+    display: none!important;
+  }
+
+ /* end change arrow button  */
+
+
+
+
+.section {
+    @apply px-0 md:px-32 max-w-[1200px] mx-auto;
+}
+
+#thumbnails {
+    max-width: 448px;
+    min-width: 0;
+}
+
+@media (max-width: 1000px) {
+    #thumbnails {
+        display: none;
+    }
+}

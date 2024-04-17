@@ -17,7 +17,7 @@ export default function Nav() {
   return (
     <>
       <MobileMenu />
-      <nav className="py-6 px-12 flex justify-between">
+      <nav className="py-6 px-12 flex justify-between mx-auto max-w-[1200px]">
         <div id="nav-left" className="flex gap-4 md:gap-10">
           <div className="flex items-center">
             <button onClick={() => setIsOpen(!isOpen)}>

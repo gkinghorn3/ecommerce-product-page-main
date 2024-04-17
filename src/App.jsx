@@ -8,8 +8,10 @@ import MobileMenuProvider from "./store/mobileMenuContext";
 function App() {
   return (
     <MobileMenuProvider>
-      <Nav />
-      <ProductMainContainer />
+      
+        <Nav />
+        <ProductMainContainer />
+     
     </MobileMenuProvider>
   );
 }
